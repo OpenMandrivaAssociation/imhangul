@@ -12,7 +12,7 @@ URL:		http://kldp.net/projects/imhangul/
 Source0:	http://kldp.net/frs/download.php/2808/%{name}-%{version}.tar.bz2
 
 BuildRequires:	gtk2-devel >= 2.4.0
-Prereq:		%_bindir/gtk-query-immodules-2.0
+Requires(post,preun):		%_bindir/gtk-query-immodules-2.0
 Requires:	gtk+2.0 >= 2.4.4-2mdk
 Requires:	locales-ko
 
