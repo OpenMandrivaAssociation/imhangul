@@ -8,6 +8,7 @@ Release:	%{release}
 License:	GPL
 Group:		System/Internationalization
 URL:		http://kldp.net/projects/imhangul/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 Source0:	http://kldp.net/frs/download.php/2808/%{name}-%{version}.tar.bz2
 
