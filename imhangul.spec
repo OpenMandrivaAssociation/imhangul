@@ -1,5 +1,5 @@
-%define version	0.9.13
-%define release %mkrel 6
+%define version	0.9.15
+%define release %mkrel 1
 
 Summary:	Hangul input module for GTK+ 2.x
 Name:		imhangul
@@ -13,6 +13,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Source0:	http://kldp.net/frs/download.php/2808/%{name}-%{version}.tar.bz2
 
 BuildRequires:	gtk2-devel >= 2.4.0
+BuildRequires:	libhangul-devel >= 0.0.10
 Requires(post,preun):		%_bindir/gtk-query-immodules-2.0
 Requires:	gtk+2.0 >= 2.4.4-2mdk
 Requires:	locales-ko
