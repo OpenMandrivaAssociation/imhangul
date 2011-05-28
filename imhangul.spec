@@ -1,5 +1,5 @@
-%define version	0.9.15
-%define release %mkrel 2
+%define version	2.0.0
+%define release %mkrel 1
 
 Summary:	Hangul input module for GTK+ 2.x
 Name:		imhangul
