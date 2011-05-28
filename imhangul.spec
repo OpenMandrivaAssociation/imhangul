@@ -14,8 +14,6 @@ Source0:	http://kldp.net/frs/download.php/2808/%{name}-%{version}.tar.bz2
 
 BuildRequires:	gtk2-devel >= 2.4.0
 BuildRequires:	libhangul-devel >= 0.0.10
-Requires(post,preun):		%_bindir/gtk-query-immodules-2.0
-Requires:	gtk+2.0 >= 2.4.4-2mdk
 Requires:	locales-ko
 
 %description
@@ -105,13 +103,3 @@ rm -rf %{buildroot}
 %doc AUTHORS COPYING ChangeLog NEWS README gtkrc
 %config(noreplace) %{_sysconfdir}/profile.d/imhangul*
 %{_libdir}/gtk-2.0/immodules/*.so
-
-
-%post
-%{_bindir}/gtk-query-immodules-2.0 %_lib > %{_sysconfdir}/gtk-2.0/gtk.immodules.%_lib
-
-%postun
-if [ $1 -eq 0 ]; then
-  %{_bindir}/gtk-query-immodules-2.0 %_lib > %{_sysconfdir}/gtk-2.0/gtk.immodules.%_lib
-fi
-
