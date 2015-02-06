@@ -1,7 +1,7 @@
 Summary:	Hangul input module for GTK+ 3.x
 Name:		imhangul
 Version:	3.1.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://code.google.com/p/imhangul/
