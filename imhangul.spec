@@ -4,7 +4,7 @@ Version:	3.1.1
 Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://code.google.com/p/imhangul/
+Url:		https://code.google.com/p/imhangul/
 Source0:	http://imhangul.googlecode.com/files/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libhangul)
