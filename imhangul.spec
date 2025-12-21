@@ -6,6 +6,11 @@ License:	GPLv2+
 Group:		System/Internationalization
 Url:		https://code.google.com/p/imhangul/
 Source0:	http://imhangul.googlecode.com/files/%{name}-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libhangul)
 Requires:	locales-ko
